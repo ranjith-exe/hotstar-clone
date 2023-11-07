@@ -1,49 +1,132 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/assets/css/style.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/assets/css/style.css" rel="stylesheet" />
     <title>Hotstar UI Clone</title>
-</head>
+  </head>
 
-<body>
+  <body class="bg-gray-800">
 
-    <!-- navbar -->
+    <header
+      class="bg-gray-800 flex py-3 px-5 text-white justify-between items-center space-x-5"
+    >
+      <div class="flex space-x-5">
+        <div>
+          <img
+            src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg"
+            alt="Hotstar Logo"
+          />
+        </div>
 
-        <header class="bg-gray-800 flex py-3 px-5 text-white justify-between items-center space-x-5">
+        <div class="flex items-center space-x-5 text-xs">
+          <div class="hover:text-yellow-600"><a href="#">TV</a></div>
+          <div class="hover:text-yellow-600"><a href="#">Movies</a></div>
+          <div class="hover:text-yellow-600"><a href="#">Sports</a></div>
+          <div class="hover:text-yellow-600"><a href="#">Disney +</a></div>
+          <div class="hover:text-yellow-600">
+            <a href="#">
+              <img
+                src="https://www.hotstar.com/assets/4aa70ede8904e16b7630300c09219c8e.svg"
+                alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
 
-            <div class="flex space-x-5"> 
-            
-                <div>
-                    <img src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg" alt="Hotstar Logo">
+      <div class="flex justify-between">
+        <div class="flex items-center space-x-5 text-xs">
+          <input
+            type="search"
+            class="bg-gray-600 px-3 py-1 rounded-full outline-none text-white"
+            placeholder="Search"
+          />
+          <button
+            class="px-2 py-1 bg-blue-500 uppercase font-semibold rounded hover:bg-blue-600"
+          >
+            subscribe
+          </button>
+          <div>
+            <a href="#" class="uppercase font-semibold hover:text-yellow-600"
+              >login</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
 
-                </div>
+    <!-- End Navbar -->
 
-                <div class="flex items-center space-x-5 text-xs">
-                    <div class="hover:text-yellow-600"><a href="#">TV</a></div>
-                    <div class="hover:text-yellow-600"><a href="#">Movies</a></div>
-                    <div class="hover:text-yellow-600"><a href="#">Sports</a></div>
-                    <div class="hover:text-yellow-600"><a href="#">Disney +</a></div>
-                    <div class="hover:text-yellow-600"><a href="#">
-                        <img src="https://www.hotstar.com/assets/4aa70ede8904e16b7630300c09219c8e.svg" alt=""></a>
-                    </div>
-                </div>
-            </div>
+    <!-- Slider -->
+    <section
+      class="h-[70vh] bg-[url('https://whatsondisneyplus.b-cdn.net/wp-content/uploads/2022/10/kv_banner_1600x667_0f1f295b.jpg')]
+       bg-black bg-opacity-25">
+    </section>
+    <!-- End Slider -->
 
-            <div class="flex justify-between">
-                <div class="flex items-center space-x-5 text-xs">
-                    <input type="search" class="bg-gray-600 px-3 py-1 rounded-full outline-none text-white" placeholder="Search"/>
-                    <button class="px-2 py-1 bg-blue-500 uppercase font-semibold rounded hover:bg-blue-600">subscribe</button>
-                    <div><a href="#" class="uppercase font-semibold hover:text-yellow-600">login</a></div>
-                </div>
-            </div>
+    <!-- Movie Cards -->
+    <div class="flex my-10 ">
+        <div class="max-w-xs mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+        <img class="w-full h-48 object-cover" src="https://m.media-amazon.com/images/M/MV5BMDk0ZmVmMTktOGNiNS00Yzg5LWIzZTAtNjUxZWZhZDljY2Y0XkEyXkFqcGdeQXVyMTY1MzAyNjU4._V1_FMjpg_UX1000_.jpg" alt="Movie Poster">
+        <div class="px-6 py-4">
+            <h2 class="text-xl font-bold mb-2">LEO TAMIL 2023</h2>
+            <p class="text-gray-700 text-base">Leo (2023 Indian film) ... Leo (also marketed as Leo: Bloody Sweet) is a 2023 Indian Tamil-language action thriller film directed by Lokesh Kanagaraj and produced ...</p>
+        </div>
+        <div class="px-6 py-4">
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Genre</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#Genre</span>
+        </div>
+        <div class="px-6 py-4">
+            <a href="#" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Watch Now</a>
+        </div>
+        </div>
+        <div class="max-w-xs mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+        <img class="w-full h-48 object-cover" src="https://m.media-amazon.com/images/M/MV5BMDk0ZmVmMTktOGNiNS00Yzg5LWIzZTAtNjUxZWZhZDljY2Y0XkEyXkFqcGdeQXVyMTY1MzAyNjU4._V1_FMjpg_UX1000_.jpg" alt="Movie Poster">
+        <div class="px-6 py-4">
+            <h2 class="text-xl font-bold mb-2">LEO TAMIL 2023</h2>
+            <p class="text-gray-700 text-base">Leo (2023 Indian film) ... Leo (also marketed as Leo: Bloody Sweet) is a 2023 Indian Tamil-language action thriller film directed by Lokesh Kanagaraj and produced ...</p>
+        </div>
+        <div class="px-6 py-4">
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Genre</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#Genre</span>
+        </div>
+        <div class="px-6 py-4">
+            <a href="#" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Watch Now</a>
+        </div>
+        </div>
+        <div class="max-w-xs mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+        <img class="w-full h-48 object-cover" src="https://m.media-amazon.com/images/M/MV5BMDk0ZmVmMTktOGNiNS00Yzg5LWIzZTAtNjUxZWZhZDljY2Y0XkEyXkFqcGdeQXVyMTY1MzAyNjU4._V1_FMjpg_UX1000_.jpg" alt="Movie Poster">
+        <div class="px-6 py-4">
+            <h2 class="text-xl font-bold mb-2">LEO TAMIL 2023</h2>
+            <p class="text-gray-700 text-base">Leo (2023 Indian film) ... Leo (also marketed as Leo: Bloody Sweet) is a 2023 Indian Tamil-language action thriller film directed by Lokesh Kanagaraj and produced ...</p>
+        </div>
+        <div class="px-6 py-4">
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Genre</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#Genre</span>
+        </div>
+        <div class="px-6 py-4">
+            <a href="#" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Watch Now</a>
+        </div>
+        </div>
+        <div class="max-w-xs mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+        <img class="w-full h-48 object-cover" src="https://m.media-amazon.com/images/M/MV5BMDk0ZmVmMTktOGNiNS00Yzg5LWIzZTAtNjUxZWZhZDljY2Y0XkEyXkFqcGdeQXVyMTY1MzAyNjU4._V1_FMjpg_UX1000_.jpg" alt="Movie Poster">
+        <div class="px-6 py-4">
+            <h2 class="text-xl font-bold mb-2">LEO TAMIL 2023</h2>
+            <p class="text-gray-700 text-base">Leo (2023 Indian film) ... Leo (also marketed as Leo: Bloody Sweet) is a 2023 Indian Tamil-language action thriller film directed by Lokesh Kanagaraj and produced ...</p>
+        </div>
+        <div class="px-6 py-4">
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#Genre</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#Genre</span>
+        </div>
+        <div class="px-6 py-4">
+            <a href="#" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Watch Now</a>
+        </div>
+        </div>
+         
+    </div>      
+    <!-- End MovieCards  -->
 
-        </header>
 
-    <!-- endnavbar -->
-    
-</body>
-
-</html> 
+  </body>
+</html>
